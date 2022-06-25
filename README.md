@@ -1,4 +1,4 @@
-# Programming-In-C-4thEd-KOCHAN
+# Programming-In-C-4th-Ed-KOCHAN
 
 [PT-BR] Repositório com todos os programas e exercícios em C da referência: KOCHAN, Stephen G. Programming in C. 4. ed. [S.I.]: Addison-Wesley Professional. 2014.
 
