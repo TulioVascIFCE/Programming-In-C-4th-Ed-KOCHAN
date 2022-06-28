@@ -13,6 +13,7 @@ struct month
 
 int main (void)
 {
+    //Variable Assign and Input
     const struct month months[12] =
         { { 31, {'J', 'a', 'n'} }, { 28, {'F', 'e', 'b'} },
         { 31, {'M', 'a', 'r'} }, { 30, {'A', 'p', 'r'} },
@@ -21,6 +22,7 @@ int main (void)
         { 30, {'S', 'e', 'p'} }, { 31, {'O', 'c', 't'} },
         { 30, {'N', 'o', 'v'} }, { 31, {'D', 'e', 'c'} } };
     
+    //Output
     printf("Month Number of Days\n");
     printf ("----- --------------\n");
 

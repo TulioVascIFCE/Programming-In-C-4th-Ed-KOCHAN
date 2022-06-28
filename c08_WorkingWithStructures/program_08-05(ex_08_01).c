@@ -16,18 +16,22 @@ void timeUpdate(struct time *, struct time *);
 
 int main ()
 {
+    //Variables w/ Pointers
     struct time currentTime, nextTime;
     struct time *currentTimePoint, *nextTimePoint;
 
     currentTimePoint = &currentTime;
     nextTimePoint = &nextTime;
 
+    //Input
     puts("Enter the time (hh:mm:ss):");
     scanf("%i:%i:%i", &currentTimePoint->hours,
             &currentTimePoint->minutes, &currentTimePoint->seconds);
 
+    //Processing
     timeUpdate(currentTimePoint, nextTimePoint);
-
+    
+    //Output
     printf("Updated time is %.2i:%.2i:%.2i.\n",
             nextTimePoint->hours, nextTimePoint->minutes, nextTimePoint->seconds);
 

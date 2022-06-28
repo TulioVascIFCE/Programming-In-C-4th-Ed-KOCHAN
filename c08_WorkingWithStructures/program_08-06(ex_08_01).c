@@ -19,15 +19,18 @@ void timeUpdate (struct time *);
 
 int main ()
 {
+	//Variables
 	struct time testTime[TAM], *testPoint = NULL;
 
 	testPoint = testTime;
 	
+	//Inputs
 	for ( int i = 0; i < TAM; i++ ){ 
 		printf ("Enter the Time (hh:mm:ss) for Test %i:\n", i);
 		scanf ("%i:%i:%i", &(testPoint + i)->hours, &(testPoint + i)->minutes, &(testPoint + i)->seconds);
 	}
 
+	//Proceesing and Outputs
 	for ( int i = 0; i < TAM; ++i ) {
 		printf("Time is %.2i:%.2i:%.2i\n", testTime[i].hours, testTime[i].minutes, testTime[i].seconds);
 		timeUpdate (testPoint + i);

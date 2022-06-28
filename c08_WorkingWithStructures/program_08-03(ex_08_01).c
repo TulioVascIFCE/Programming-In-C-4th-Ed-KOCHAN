@@ -20,6 +20,7 @@ char isLeapYear(struct date);
 
 int main ()
 {
+	//Variables
 	struct date today, tomorrow;
 
 	// Inputs
