@@ -15,6 +15,7 @@ int main ()
 		int day;
 		int year;
 	};
+	
 	struct date today, tomorrow;
 
 	int daysPerMonths[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31,30, 31};

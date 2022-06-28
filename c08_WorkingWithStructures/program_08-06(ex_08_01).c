@@ -20,7 +20,7 @@ void timeUpdate (struct time *);
 int main ()
 {
 	struct time testTime[TAM], *testPoint = NULL;
-///*
+
 	testPoint = testTime;
 	
 	for ( int i = 0; i < TAM; i++ ){ 
@@ -33,12 +33,11 @@ int main ()
 		timeUpdate (testPoint + i);
  		printf (" ...one second later it's %.2i:%.2i:%.2i\n", testTime[i].hours, testTime[i].minutes, testTime[i].seconds);
 	}
-//*/
+
 	return EXIT_SUCCESS;
 }
 
 //Function to update the time by one second
-
 void timeUpdate (struct time *point)
 {
 
