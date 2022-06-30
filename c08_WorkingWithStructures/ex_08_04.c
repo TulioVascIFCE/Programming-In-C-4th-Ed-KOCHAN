@@ -31,7 +31,7 @@ int main(){
 	printf("%d, %d\n", (indexDate(oneDate) - 621049), weekDaysNumber);
 
 	//Saídas
-	printf("O dia %d/%.2d/%d caiu numa:", oneDate.day, oneDate.month, oneDate.year);
+	printf("O dia %d/%.2d/%d caiu numa: ", oneDate.day, oneDate.month, oneDate.year);
 	while (weekName[weekDaysNumber].dayName[aux] != '\0'){
 		printf("%c", weekName[weekDaysNumber].dayName[aux]);
 		aux++;
