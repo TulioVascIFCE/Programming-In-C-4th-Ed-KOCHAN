@@ -6,26 +6,24 @@
 int main(void) 
 {
 	struct entry {
-		int          value;
+		int value;
 		struct entry *next;
-	};
+		};
 
-	struct entry n1, n2, n3;
-	struct entry *list_pointer = &n1;
+	struct entry node[3];
+	struct entry *list_pointer = &node[0];
+	int i = 0;
 
-	n1.value = 100;
-	n1.next  = &n2;
-
-	n2.value = 200;
-	n2.next  = &n3;
-
-	n3.value = 200;
-	n3.next  = (struct entry *) 0;    /* mark list end with null pointer */
-
+	node[0].next  = &node[1];
+	node[1].next  = &node[2];
+	node[2].next  = (struct entry *) 0;    /* mark list end with null pointer */
+	
 	while (list_pointer != (struct entry *) 0) {
-		printf("%i\n", list_pointer->value);
+		scanf("%i", &node[i].value);
+		printf("%i\n", list_pointer->value * (2<<i));
 		list_pointer = list_pointer->next;
-	}
+		i++;
+		}
 
 	return 0;
 }

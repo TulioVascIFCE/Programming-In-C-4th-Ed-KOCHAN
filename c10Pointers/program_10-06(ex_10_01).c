@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 struct entry {
-		int           value;
+		int value;
 		struct entry *next;
 	};
 
